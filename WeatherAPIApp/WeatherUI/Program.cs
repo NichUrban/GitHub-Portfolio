@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WeatherAPILib;
 
-namespace WeatherUI
+namespace ConsoleUI
 {
     class Program
     {

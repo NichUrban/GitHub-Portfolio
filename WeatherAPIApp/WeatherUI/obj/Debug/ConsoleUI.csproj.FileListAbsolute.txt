@@ -1,0 +1,14 @@
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\bin\Debug\WeatherUI.exe.config
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\bin\Debug\WeatherUI.exe
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\bin\Debug\WeatherUI.pdb
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\bin\Debug\WeatherAPILib.dll
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\bin\Debug\WeatherAPILib.pdb
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\bin\Debug\WeatherAPILib.dll.config
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\obj\Debug\ConsoleUI.csproj.CopyComplete
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\obj\Debug\WeatherUI.exe
+C:\Users\nicho\source\GitHubPortfolio\WeatherAPIApp\WeatherUI\obj\Debug\WeatherUI.pdb
