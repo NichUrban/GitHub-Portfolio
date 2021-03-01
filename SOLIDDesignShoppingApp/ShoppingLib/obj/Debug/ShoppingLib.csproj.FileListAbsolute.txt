@@ -1,0 +1,12 @@
+C:\Users\nicho\source\repos\SOLIDDesignShoppingApp\ShoppingLib\bin\Debug\ShoppingLib.dll
+C:\Users\nicho\source\repos\SOLIDDesignShoppingApp\ShoppingLib\bin\Debug\ShoppingLib.pdb
+C:\Users\nicho\source\repos\SOLIDDesignShoppingApp\ShoppingLib\obj\Debug\ShoppingLib.csprojAssemblyReference.cache
+C:\Users\nicho\source\repos\SOLIDDesignShoppingApp\ShoppingLib\obj\Debug\ShoppingLib.csproj.CoreCompileInputs.cache
+C:\Users\nicho\source\repos\SOLIDDesignShoppingApp\ShoppingLib\obj\Debug\ShoppingLib.dll
+C:\Users\nicho\source\repos\SOLIDDesignShoppingApp\ShoppingLib\obj\Debug\ShoppingLib.pdb
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingLib\bin\Debug\ShoppingLib.dll
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingLib\bin\Debug\ShoppingLib.pdb
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingLib\obj\Debug\ShoppingLib.csproj.CoreCompileInputs.cache
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingLib\obj\Debug\ShoppingLib.dll
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingLib\obj\Debug\ShoppingLib.pdb
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingLib\obj\Debug\ShoppingLib.csprojAssemblyReference.cache
