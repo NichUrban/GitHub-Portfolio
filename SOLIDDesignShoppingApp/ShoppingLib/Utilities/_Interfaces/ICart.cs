@@ -15,6 +15,5 @@ namespace ShoppingLib
         IShopper Shopper { get; set; }
 
         decimal GenerateTotal();
-
     }
 }

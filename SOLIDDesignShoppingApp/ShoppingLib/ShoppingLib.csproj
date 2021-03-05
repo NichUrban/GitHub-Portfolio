@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Utilities\Checkout.cs" />
+    <Compile Include="GenerateSampleData.cs" />
     <Compile Include="Products\DigitalProducts\_Interfaces\IDigitalMovie.cs" />
     <Compile Include="Products\DigitalProducts\_Interfaces\IDigitalMusicAlbum.cs" />
     <Compile Include="Products\_Interfaces\IBook.cs" />
@@ -64,8 +66,9 @@
     <Compile Include="Products\BaseProduct.cs" />
     <Compile Include="Products\_Interfaces\IProduct.cs" />
     <Compile Include="Utilities\Cart.cs" />
+    <Compile Include="Utilities\ICheckout.cs" />
     <Compile Include="Utilities\_Interfaces\ICart.cs" />
-    <Compile Include="Shoppers\NonMemberShopper.cs" />
+    <Compile Include="Shoppers\GuestShopper.cs" />
     <Compile Include="Shoppers\BaseShopper.cs" />
     <Compile Include="Shoppers\_Interfaces\IShopper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

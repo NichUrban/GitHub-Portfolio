@@ -15,18 +15,15 @@ namespace ShoppingLib
         }
 
         private int _productIDNum;
-
         public int ProductIDNum
         {
             get { return _productIDNum; }
         }
 
         private decimal _price;
-
         public decimal Price
         {
             get { return _price; }
-            
         }
     }
 }

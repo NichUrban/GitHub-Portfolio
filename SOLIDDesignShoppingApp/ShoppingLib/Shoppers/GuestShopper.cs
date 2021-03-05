@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShoppingLib
 {
-    public class NonMemberShopper : BaseShopper, IShopper
+    public class GuestShopper : BaseShopper, IShopper
     {
     }
 }

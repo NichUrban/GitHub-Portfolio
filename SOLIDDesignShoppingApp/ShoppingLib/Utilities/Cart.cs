@@ -38,7 +38,5 @@ namespace ShoppingLib
 
             return total;
         }
-
-
     }
 }

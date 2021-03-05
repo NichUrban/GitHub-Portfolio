@@ -11,43 +11,29 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-
-
-            IDigitalBook digiBook = new DigitalBook(1, 20M);
-            IPhysicalBook book = new PhysicalBook(2, 30M);
-
-            IDigitalMovie digiMovie = new DigitalMovie(3, 10M);
-            IPhysicalMovie movie = new PhysicalMovieDVD(4, 10M);
-
-            IDigitalMusicAlbum digiAlbum = new DigitalMusicAlbum(5, 10M);
-            IPhysicalMusicAlbum album = new PhysicalMusicAlbumCD(6, 20M);
-
-            List<IProduct> items = new List<IProduct>();
-            items.Add(digiBook);
-            items.Add(book);
-            items.Add(digiMovie);
-            items.Add(movie);
-            items.Add(digiAlbum);
-            items.Add(album);
-
-
+            // creates a shopping cart, which can be assigned a shopper
             ICart cart = new Cart();
+            cart.Items = GenerateSampleData.SampleProductList(); // fills contents of cart with sample data (see: GenerateSampleData class)
 
-            cart.Items = items;
+            Checkout virtualRegister = new Checkout(cart);
 
-            IShopper employee = new EmployeeShopper();
-            cart.Shopper = employee;
-            Console.WriteLine($"Employee total: ${cart.GenerateTotal()}");
+            // creates a new Guest shopper
+            IShopper guest = new GuestShopper();
+            cart.Shopper = guest;
+            Console.WriteLine($"Guest shopper:\n{ virtualRegister.DisplayCheckOutMessage() }\n"); // generates total for cart
 
+            // creates a new Member shopper with member discount
             IShopper member = new MemberShopper();
             cart.Shopper = member;
-            Console.WriteLine($"Member total: ${cart.GenerateTotal()}");
+            Console.WriteLine($"Member shopper:\n{ virtualRegister.DisplayCheckOutMessage() }\n"); // generates total for cart with member discount
 
-            IShopper guest = new NonMemberShopper();
-            cart.Shopper = guest;
-            Console.WriteLine($"Guest total: ${cart.GenerateTotal()}");
+            //creates a new Employee shopper with employee discount
+            IShopper employee = new EmployeeShopper();
+            cart.Shopper = employee;
+            Console.WriteLine($"Employee shopper:\n{ virtualRegister.DisplayCheckOutMessage() }\n"); // generates total for cart with employee discount
 
 
+            // END of Main
             Console.ReadLine();
         }
     }
