@@ -18,7 +18,7 @@ namespace ShoppingLib
         
         public string DirectedBy { get; set; }
         
-        public double RunTimeInMinutes { get; set; }
+        public double RunTimeInMinutes { get; set; } 
 
         public int Download()
         {

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>ShoppingWebsiteDB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{aee0013f-045b-457a-a9a7-39000e20b51f}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>WebsiteDB</RootNamespace>
+    <AssemblyName>WebsiteDB</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Tables" />
+    <Folder Include="dbo\Tables\Products" />
+    <Folder Include="dbo\Tables\Shoppers" />
+    <Folder Include="dbo\Tables\Shoppers\Addresses" />
+    <Folder Include="dbo\PostDeployScripts" />
+    <Folder Include="dbo\PublishLocations" />
+    <Folder Include="dbo\Views" />
+    <Folder Include="dbo\StoredProcedures" />
+    <Folder Include="dbo\MISC" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Products\DigitalBook.sql" />
+    <Build Include="dbo\Tables\Shoppers\MemberShopper.sql" />
+    <Build Include="dbo\Tables\Shoppers\EmployeeShopper.sql" />
+    <Build Include="dbo\Tables\Shoppers\Addresses\MemberAddress.sql" />
+    <Build Include="dbo\Tables\Shoppers\Addresses\EmployeeAddress.sql" />
+    <Build Include="dbo\Views\FullEmployeeShopper.sql" />
+    <Build Include="dbo\Views\FullMemberShopper.sql" />
+    <Build Include="dbo\StoredProcedures\spMemberShopper_FillterByLastName.sql" />
+    <Build Include="dbo\Views\AllProductsBasicInfo.sql" />
+    <Build Include="dbo\StoredProcedures\spAllProductsBasicInfo_FilterByPrice.sql" />
+    <Build Include="dbo\StoredProcedures\spEmployeeShopper_AddNewEmployee.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="WebsiteDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Products\DigitalMovie.sql" />
+    <Build Include="dbo\Tables\Products\DigitalMusicAlbum.sql" />
+    <Build Include="dbo\Tables\Products\PhysicalBook.sql" />
+    <Build Include="dbo\Tables\Products\PhysicalMovieDVD.sql" />
+    <Build Include="dbo\Tables\Products\PhysicalMusicAlbumCD.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="dbo\PostDeployScripts\Script.CreateSampleData.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\PublishLocations\ShoppingWebsiteDB.publish.xml" />
+    <None Include="dbo\MISC\StoredProcedureExecs.sql" />
+  </ItemGroup>
+</Project>

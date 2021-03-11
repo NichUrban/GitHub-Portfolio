@@ -1,0 +1,6 @@
+C:\Users\nicho\source\repos\ShoppingSiteDatabase\WebsiteDB\bin\Debug\WebsiteDB.dacpac
+C:\Users\nicho\source\repos\ShoppingSiteDatabase\WebsiteDB\bin\Debug\WebsiteDB.dll
+C:\Users\nicho\source\repos\ShoppingSiteDatabase\WebsiteDB\bin\Debug\WebsiteDB.pdb
+C:\Users\nicho\source\repos\ShoppingSiteDatabase\WebsiteDB\obj\Debug\WebsiteDB.dll
+C:\Users\nicho\source\repos\ShoppingSiteDatabase\WebsiteDB\obj\Debug\WebsiteDB.pdb
+C:\Users\nicho\source\repos\ShoppingSiteDatabase\WebsiteDB\obj\Debug\WebsiteDB.sqlprojAssemblyReference.cache

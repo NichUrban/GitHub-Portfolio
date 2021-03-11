@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ShoppingLib
 {
-    public class EmployeeShopper : BaseShopper, IDiscounts
+    public class EmployeeShopper : BaseShopper, IEmployeeShopper
     {
         public decimal DiscountRate { get; } = .03M;
+        
+        public int EmployeeIDNumber { get; set; }
     }
 }

@@ -1,0 +1,26 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[DigitalBook] (Table)
+       [dbo].[DigitalMovie] (Table)
+       [dbo].[DigitalMusicAlbum] (Table)
+       [dbo].[EmployeeAddress] (Table)
+       [dbo].[EmployeeShopper] (Table)
+       [dbo].[MemberAddress] (Table)
+       [dbo].[MemberShopper] (Table)
+       [dbo].[PhysicalBook] (Table)
+       [dbo].[PhysicalMovieDVD] (Table)
+       [dbo].[PhysicalMusicAlbumCD] (Table)
+       [dbo].[FK_Address_Employee] (Foreign Key)
+       [dbo].[FK_Address_Member] (Foreign Key)
+
+** Supporting actions
