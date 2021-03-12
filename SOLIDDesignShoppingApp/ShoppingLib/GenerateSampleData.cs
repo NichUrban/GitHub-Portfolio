@@ -10,7 +10,7 @@ namespace ShoppingLib
     {
         public static List<IProduct> SampleProductList()
         {
-            // a digital and physical book
+            // a digital book and physical book
             IDigitalBook digiBook = new DigitalBook(12345, 20M)
             {
                 Author = "John Smith",
@@ -23,7 +23,7 @@ namespace ShoppingLib
                 Pages = 536
             };
 
-            // a digital and physical movie
+            // a digital movie and physical movie
             IDigitalMovie digiMovie = new DigitalMovie(34567, 10M)
             {
                 DirectedBy = "Coen Brothers",
@@ -38,7 +38,7 @@ namespace ShoppingLib
                 RunTimeInMinutes = 75.5
             };
 
-            // a digital and physical music album
+            // a digital music album and physical music album
             IDigitalMusicAlbum digiAlbum = new DigitalMusicAlbum(56789, 10M)
             {
                 Artist = "Brian Wilson",

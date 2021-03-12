@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WeatherAPILib
 {
-    public class CitySearchModel // all the property names match the key-value key names (newtonsoft)
+    public class CitySearchModel // all the property names match the json key-value key names (newtonsoft)
     {
         public string Title { get; set; }
 

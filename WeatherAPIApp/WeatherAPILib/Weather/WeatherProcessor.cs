@@ -9,7 +9,7 @@ namespace WeatherAPILib
 {
     public static class WeatherProcessor
     {
-        public static async Task<WeatherDetailsModel> LoadWeatherInformation(int woeid) // takes in one city's 'woeid' number and returns the weather model with the 5 day weather
+        public static async Task<WeatherDetailsModel> LoadWeatherInformation(int woeid) // takes in one city's "where on earth id (woeid)" number and returns the weather model with the 5 day weather
         {
             string baseUrl = "https://www.metaweather.com/api/locationlocation/";
 

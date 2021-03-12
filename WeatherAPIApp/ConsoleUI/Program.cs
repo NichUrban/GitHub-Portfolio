@@ -11,18 +11,18 @@ namespace ConsoleUI
     {
         static async Task Main(string[] args)
         {
-            APIHelper.InitializeClient(); // **always add at the start of an application
+            APIHelper.InitializeClient(); 
 
             List<CitySearchModel> search = await CitySearchProcessor.LoadSearchInformation("chicago"); 
 
-            WeatherDetailsModel chicago = await WeatherProcessor.LoadWeatherInformation(search[0].Woeid); 
+            WeatherDetailsModel city = await WeatherProcessor.LoadWeatherInformation(search[0].Woeid); 
 
             Console.WriteLine();
-            Console.WriteLine($"Here is today's and the following 5 day's weather forecast for {chicago.Title}:");
+            Console.WriteLine($"Here is today's and the following 5 day's weather forecast for {city.Title}:");
             Console.WriteLine("_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_");
             Console.WriteLine();
 
-            foreach (var day in chicago.Consolidated_Weather)
+            foreach (var day in city.Consolidated_Weather)
             {
                 Console.WriteLine("---------------------------------------------");
                 Console.WriteLine($"Date: {day.Applicable_Date.ToShortDateString()}");

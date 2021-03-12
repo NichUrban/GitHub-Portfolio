@@ -11,10 +11,9 @@ namespace WeatherAPILib
     {
         public static HttpClient ApiClient { get; set; }
 
-        public static void InitializeClient() // creates one connection to the API at the start of the application
+        public static void InitializeClient() // creates one connection for API's at the start of the application
         {
             ApiClient = new HttpClient();
-            //ApiClient.BaseAddress = new Uri("--------"); 
             ApiClient.DefaultRequestHeaders.Accept.Clear();
             ApiClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
         }
