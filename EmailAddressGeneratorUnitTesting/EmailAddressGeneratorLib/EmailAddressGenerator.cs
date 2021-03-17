@@ -23,7 +23,7 @@ namespace EmailAddressGeneratorLib
 
             string email = "";
 
-            // (below) appends text to an email address for a user, and checks for certain conditions to add/omit certain strings of text to the email address
+            // the code below appends text to an email address for a user, and checks for certain conditions to add/omit certain strings of text to the email address
             email += user.FirstName.Substring(0, 1).ToLower();
             if (string.IsNullOrWhiteSpace(user.MiddleName) != true)
             {

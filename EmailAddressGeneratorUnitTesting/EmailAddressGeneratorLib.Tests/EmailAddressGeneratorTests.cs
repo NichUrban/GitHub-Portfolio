@@ -24,7 +24,7 @@ namespace EmailAddressGeneratorLib.Tests
             Assert.Equal(expected, actual);
         }
 
-        // test creating an email address for someone without a middle name, and is non-manager
+        // test creating an email address for someone with a middle name, and is non-manager
         [Fact]
         public void GenerateEmailAddressFullName_ShouldWork() 
         {
@@ -39,9 +39,9 @@ namespace EmailAddressGeneratorLib.Tests
             Assert.Equal(expected, actual);
         }
 
-        // test creating an email address for someone without a middle name, and is non-manager
+        // test creating an email address for someone without a middle name, and is a manager
         [Fact]
-        public void GenerateEmailAddressNoMiddleManagement_ShouldWork() 
+        public void GenerateEmailAddressNoMiddleIsManager_ShouldWork() 
         {
             // Arrange
             UserModel user = new UserModel { FirstName = "Emma", LastName = "Watson", IsManager = true };
@@ -56,7 +56,7 @@ namespace EmailAddressGeneratorLib.Tests
 
         // test creating an email address for someone with a full name, and is a manager
         [Fact]
-        public void GenerateEmailAddressFullNameManagement_ShouldWork() 
+        public void GenerateEmailAddressFullNameIsManager_ShouldWork() 
         {
             // Arrange
             UserModel user = new UserModel { FirstName = "Maynard", MiddleName = "James", LastName = "Keenan", IsManager = true };

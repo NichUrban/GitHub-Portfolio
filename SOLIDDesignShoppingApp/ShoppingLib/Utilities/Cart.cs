@@ -15,7 +15,10 @@ namespace ShoppingLib
         private decimal _total;
         public decimal Total
         {
-            get { return _total; }
+            get 
+            { 
+                return _total; 
+            }
             private set
             {
                 _total = GenerateTotal();
