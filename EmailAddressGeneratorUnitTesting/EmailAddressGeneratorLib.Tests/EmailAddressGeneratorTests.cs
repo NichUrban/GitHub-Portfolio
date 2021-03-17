@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace EmailAddressGeneratorLib.Tests // If you see this, this came from a separate git branch
+namespace EmailAddressGeneratorLib.Tests 
 {
     public class EmailAddressGeneratorTests
     {
