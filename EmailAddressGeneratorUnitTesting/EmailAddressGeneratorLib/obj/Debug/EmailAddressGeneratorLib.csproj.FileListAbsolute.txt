@@ -4,3 +4,9 @@ C:\Users\nicho\source\repos\EmailAddressGeneratorUnitTesting\EmailAddressGenerat
 C:\Users\nicho\source\repos\EmailAddressGeneratorUnitTesting\EmailAddressGeneratorLib\obj\Debug\EmailAddressGeneratorLib.dll
 C:\Users\nicho\source\repos\EmailAddressGeneratorUnitTesting\EmailAddressGeneratorLib\obj\Debug\EmailAddressGeneratorLib.pdb
 C:\Users\nicho\source\repos\EmailAddressGeneratorUnitTesting\EmailAddressGeneratorLib\obj\Debug\EmailAddressGeneratorLib.csprojAssemblyReference.cache
+C:\Users\nicho\Desktop\git_practice\GitHub-Portfolio\EmailAddressGeneratorUnitTesting\EmailAddressGeneratorLib\bin\Debug\EmailAddressGeneratorLib.dll
+C:\Users\nicho\Desktop\git_practice\GitHub-Portfolio\EmailAddressGeneratorUnitTesting\EmailAddressGeneratorLib\bin\Debug\EmailAddressGeneratorLib.pdb
+C:\Users\nicho\Desktop\git_practice\GitHub-Portfolio\EmailAddressGeneratorUnitTesting\EmailAddressGeneratorLib\obj\Debug\EmailAddressGeneratorLib.csprojAssemblyReference.cache
+C:\Users\nicho\Desktop\git_practice\GitHub-Portfolio\EmailAddressGeneratorUnitTesting\EmailAddressGeneratorLib\obj\Debug\EmailAddressGeneratorLib.csproj.CoreCompileInputs.cache
+C:\Users\nicho\Desktop\git_practice\GitHub-Portfolio\EmailAddressGeneratorUnitTesting\EmailAddressGeneratorLib\obj\Debug\EmailAddressGeneratorLib.dll
+C:\Users\nicho\Desktop\git_practice\GitHub-Portfolio\EmailAddressGeneratorUnitTesting\EmailAddressGeneratorLib\obj\Debug\EmailAddressGeneratorLib.pdb
