@@ -44,7 +44,6 @@
     <Compile Include="Shoppers\Employees\IEmployeeShopper.cs" />
     <Compile Include="Shoppers\Members\IMemberShopper.cs" />
     <Compile Include="Utilities\Checkout.cs" />
-    <Compile Include="GenerateSampleData.cs" />
     <Compile Include="Products\DigitalProducts\_Interfaces\IDigitalMovie.cs" />
     <Compile Include="Products\DigitalProducts\_Interfaces\IDigitalMusicAlbum.cs" />
     <Compile Include="Products\_Interfaces\IBook.cs" />
