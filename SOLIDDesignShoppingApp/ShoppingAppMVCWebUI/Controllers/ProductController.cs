@@ -15,36 +15,5 @@ namespace ShoppingAppMVCWebUI.Controllers
         {
             return View();
         }
-
-        public ActionResult PhysicalBooks()
-        {
-            List<PhysicalBook> books = PhysicalBooksListModel.GenerateSampleData();
-            return View(books);
-        }
-
-        public ActionResult PhysicalMovies()
-        {
-            return View();
-        }
-
-        public ActionResult PhysicalMusicAlbums()
-        {
-            return View();
-        }
-
-        public ActionResult DigitalBooks()
-        {
-            return View();
-        }
-
-        public ActionResult DigitalMovies()
-        {
-            return View();
-        }
-
-        public ActionResult DigitalMusicAlbums()
-        {
-            return View();
-        }
     }
 }

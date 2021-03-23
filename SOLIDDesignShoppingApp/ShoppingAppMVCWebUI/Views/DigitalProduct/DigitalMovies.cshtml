@@ -1,10 +1,12 @@
-﻿@model IEnumerable<ShoppingLib.PhysicalBook>
+﻿@model IEnumerable<ShoppingLib.DigitalMovie>
 
 @{
-    ViewBag.Title = "PhysicalBooks";
+    ViewBag.Title = "DigitalMovies";
 }
 
-<h2>PhysicalBooks</h2>
+<h2>DigitalMovies</h2>
+
+<h4>@Html.ActionLink("Products Page", "Index", "Product") > @Html.ActionLink("Digital Products Page", "Index", "DigitalProduct")</h4>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -18,16 +20,16 @@
             @Html.DisplayNameFor(model => model.Price)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Pages)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.InStock)
+            @Html.DisplayNameFor(model => model.DownloadsLeft)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Title)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Author)
+            @Html.DisplayNameFor(model => model.DirectedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RunTimeInMinutes)
         </th>
         <th></th>
     </tr>
@@ -41,16 +43,16 @@
             @Html.DisplayFor(modelItem => item.Price)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Pages)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.InStock)
+            @Html.DisplayFor(modelItem => item.DownloadsLeft)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Title)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Author)
+            @Html.DisplayFor(modelItem => item.DirectedBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RunTimeInMinutes)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |

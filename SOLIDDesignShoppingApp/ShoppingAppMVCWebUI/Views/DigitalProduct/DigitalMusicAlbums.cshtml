@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ShoppingLib.DigitalMusicAlbum>
+
+@{
+    ViewBag.Title = "DigitalMusicAlbums";
+}
+
+<h2>DigitalMusicAlbums</h2>
+
+<h4>@Html.ActionLink("Products Page", "Index", "Product") > @Html.ActionLink("Digital Products Page", "Index", "DigitalProduct")</h4>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductIDNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DownloadsLeft)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Artist)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumberOfTracks)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductIDNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DownloadsLeft)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Artist)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfTracks)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

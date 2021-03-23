@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ShoppingLib.PhysicalMovieDVD>
+
+@{
+    ViewBag.Title = "PhysicalMovies";
+}
+
+<h2>PhysicalMovies</h2>
+
+<h4>@Html.ActionLink("Products Page", "Index", "Product") > @Html.ActionLink("Physical Products Page", "Index", "PhysicalProduct")</h4>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductIDNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumberOfDisks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InStock)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DirectedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RunTimeInMinutes)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductIDNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfDisks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InStock)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DirectedBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RunTimeInMinutes)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
