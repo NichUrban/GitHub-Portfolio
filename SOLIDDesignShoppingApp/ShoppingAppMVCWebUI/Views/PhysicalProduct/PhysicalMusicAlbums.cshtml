@@ -44,7 +44,7 @@
                 @Html.DisplayFor(modelItem => item.ProductIDNum)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Price)
+                $@Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.IsSpecialEdition)
@@ -62,9 +62,7 @@
                 @Html.DisplayFor(modelItem => item.NumberOfTracks)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Purchase", "Purchase", "Product")
             </td>
         </tr>
     }

@@ -8,9 +8,6 @@
 
 <h4>@Html.MvcSiteMap().SiteMapPath()</h4> <!--added this here for breadcrumbs-->
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -41,7 +38,7 @@
                 @Html.DisplayFor(modelItem => item.ProductIDNum)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Price)
+                $@Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Pages)
@@ -56,9 +53,7 @@
                 @Html.DisplayFor(modelItem => item.Author)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Purchase", "Purchase", "Product")
             </td>
         </tr>
     }

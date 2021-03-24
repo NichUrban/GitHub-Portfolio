@@ -187,6 +187,7 @@
     <Content Include="Views\DigitalProduct\DigitalBooks.cshtml" />
     <Content Include="Views\DigitalProduct\DigitalMovies.cshtml" />
     <Content Include="Views\DigitalProduct\DigitalMusicAlbums.cshtml" />
+    <Content Include="Views\Product\Purchase.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
