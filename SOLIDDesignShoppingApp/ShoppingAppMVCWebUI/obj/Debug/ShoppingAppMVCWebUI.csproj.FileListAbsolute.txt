@@ -86,3 +86,5 @@ C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI
 C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\MvcSiteMapProvider.xml
 C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\MvcSiteMapProvider.WebActivator.pdb
 C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\MvcSiteMapProvider.WebActivator.xml
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\roslyn\System.Memory.dll
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\roslyn\System.Numerics.Vectors.dll
