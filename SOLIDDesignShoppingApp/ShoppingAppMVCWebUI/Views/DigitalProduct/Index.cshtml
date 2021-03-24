@@ -4,7 +4,7 @@
 }
 
 <h2>Digital Products</h2>
-<h4>@Html.ActionLink("Products Page", "Index", "Product")</h4>
+<h4>@Html.MvcSiteMap().SiteMapPath()</h4> <!--added this here for breadcrumbs-->
 
 <p>@Html.ActionLink("Books", "DigitalBooks", "DigitalProduct")</p>
 <p>@Html.ActionLink("Movies", "DigitalMovies", "DigitalProduct")</p>

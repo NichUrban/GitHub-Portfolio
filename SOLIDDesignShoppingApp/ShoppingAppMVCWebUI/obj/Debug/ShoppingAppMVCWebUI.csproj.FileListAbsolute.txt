@@ -79,3 +79,10 @@ C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI
 C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\obj\Debug\ShoppingAppMVCWebUI.pdb
 C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\ShoppingLib.dll
 C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\ShoppingLib.pdb
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\MvcSiteMapProvider.dll
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\MvcSiteMapProvider.WebActivator.dll
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\WebActivatorEx.dll
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\Microsoft.Web.Administration.dll
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\MvcSiteMapProvider.xml
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\MvcSiteMapProvider.WebActivator.pdb
+C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingAppMVCWebUI\bin\MvcSiteMapProvider.WebActivator.xml
