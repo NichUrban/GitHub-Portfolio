@@ -3,21 +3,21 @@
             xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
             xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
 
-  <mvcSiteMapNode title="Home" controller="Home" action="Index">
+  <!--<mvcSiteMapNode title="Home" controller="Home" action="Index" >
     <mvcSiteMapNode title="About" controller="Home" action="About"/>
-	  <mvcSiteMapNode title="Products" controller="Product" action="Index" >
-		  <mvcSiteMapNode title="Digital Products" controller="DigitalProduct" action="Index" >
-			  <mvcSiteMapNode title="Books" action="DigitalBooks" />
-			  <mvcSiteMapNode title="Movies" action="DigitalMovies" />
-			  <mvcSiteMapNode title="Music Albums" action="DigitalMusicAlbums" />
-		  </mvcSiteMapNode>
-		  <mvcSiteMapNode title="Physical Products" controller="PhysicalProduct" action="Index" >
-			  <mvcSiteMapNode title="Books" action="PhysicalBooks" />
-			  <mvcSiteMapNode title="Movies" action="PhysicalMovies" />
-			  <mvcSiteMapNode title="Music Albums" action="PhysicalMusicAlbums" />
-		  </mvcSiteMapNode>
-			  
-	  </mvcSiteMapNode>
-  </mvcSiteMapNode>
+  </mvcSiteMapNode>-->
+
+	<mvcSiteMapNode title="Products" controller="Product" action="Index" >
+		<mvcSiteMapNode title="Digital Products" controller="DigitalProduct" action="Index" >
+			<mvcSiteMapNode title="Books" action="DigitalBooks" />
+			<mvcSiteMapNode title="Movies" action="DigitalMovies" />
+			<mvcSiteMapNode title="Music Albums" action="DigitalMusicAlbums" />
+		</mvcSiteMapNode>
+		<mvcSiteMapNode title="Physical Products" controller="PhysicalProduct" action="Index" >
+			<mvcSiteMapNode title="Books" action="PhysicalBooks" />
+			<mvcSiteMapNode title="Movies" action="PhysicalMovies" />
+			<mvcSiteMapNode title="Music Albums" action="PhysicalMusicAlbums" />
+		</mvcSiteMapNode>
+	</mvcSiteMapNode>
 
 </mvcSiteMap>
