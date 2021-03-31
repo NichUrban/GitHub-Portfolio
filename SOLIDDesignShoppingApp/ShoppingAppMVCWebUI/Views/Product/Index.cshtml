@@ -6,9 +6,11 @@
 <h1>Products Page</h1>
 <h4>@Html.MvcSiteMap().SiteMapPath()</h4> <!--added this here for breadcrumbs-->
 
-<p>There are Physical Products, and there are Digital Products.</p>
+<p>There are Physical Products, and there are Digital Products:</p>
 
-<p>@Html.ActionLink("Physical Products", "Index", "PhysicalProduct")</p>
-<p>@Html.ActionLink("Digital Products", "Index", "DigitalProduct")</p>
+<a class="col-sm-6 btn btn-info" href="@Url.Action("Index", "PhysicalProduct")">Physical Products</a>
+<a class="col-sm-6 btn btn-info" href="@Url.Action("Index", "DigitalProduct")">Digital Products</a>
+
+@* @Html.ActionLink("Physical Products", "Index", "PhysicalProduct") *@
 
 

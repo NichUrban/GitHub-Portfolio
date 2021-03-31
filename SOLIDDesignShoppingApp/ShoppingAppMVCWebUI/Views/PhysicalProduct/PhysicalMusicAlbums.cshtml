@@ -11,7 +11,7 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<table class="table table-hover">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.ProductIDNum)
@@ -62,7 +62,10 @@
                 @Html.DisplayFor(modelItem => item.NumberOfTracks)
             </td>
             <td>
-                @Html.ActionLink("Purchase", "Purchase", "Product")
+                <a class="btn btn-default" href="@Url.Action("Purchase", "Product")">
+                    Purchase
+                </a>
+                
             </td>
         </tr>
     }
