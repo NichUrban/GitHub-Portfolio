@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ShoppingLib;
 
-namespace ShoppingLib
+namespace ConsoleUI
 {
-    public class Checkout : ICheckout
+    public class Checkout
     {
         private ICart _cart;
         public ICart Cart 

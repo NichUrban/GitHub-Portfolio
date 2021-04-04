@@ -47,7 +47,9 @@
                 @Html.DisplayFor(modelItem => item.Author)
             </td>
             <td>
-                @Html.ActionLink("Purchase", "Purchase", "Product")
+                <a class="btn btn-default" href="@Url.Action("Purchase", "Product")">
+                    Purchase
+                </a>
             </td>
         </tr>
     }

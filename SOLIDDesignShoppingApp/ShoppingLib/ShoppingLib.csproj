@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="Shoppers\Employees\IEmployeeShopper.cs" />
     <Compile Include="Shoppers\Members\IMemberShopper.cs" />
-    <Compile Include="Utilities\Checkout.cs" />
     <Compile Include="Products\DigitalProducts\_Interfaces\IDigitalMovie.cs" />
     <Compile Include="Products\DigitalProducts\_Interfaces\IDigitalMusicAlbum.cs" />
     <Compile Include="Products\_Interfaces\IBook.cs" />
@@ -67,7 +66,6 @@
     <Compile Include="Products\BaseProduct.cs" />
     <Compile Include="Products\_Interfaces\IProduct.cs" />
     <Compile Include="Utilities\Cart.cs" />
-    <Compile Include="Utilities\ICheckout.cs" />
     <Compile Include="Utilities\_Interfaces\ICart.cs" />
     <Compile Include="Shoppers\GuestShopper.cs" />
     <Compile Include="Shoppers\BaseShopper.cs" />
