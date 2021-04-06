@@ -18,6 +18,8 @@
     <br>
     <input type="submit" value="Get Forecast">
 }
+
+<h3>6 day forecast: @ViewBag.City</h3>
 <table class="table">
     <tr>
         <th>
@@ -43,7 +45,10 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Applicable_Date)
+                    @{ 
+                        string applicableDate = item.Applicable_Date.ToShortDateString();
+                    }
+                    @Html.DisplayFor(modelItem => applicableDate)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Weather_State_Name)
@@ -60,6 +65,5 @@
                 </td>
             </tr>
         }
-
     }
 </table>
