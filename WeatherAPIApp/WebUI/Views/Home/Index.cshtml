@@ -1,0 +1,65 @@
+﻿@model IEnumerable<WeatherAPILib.WeatherModel>
+
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Weather App</h1>
+    <p class="lead">A website for checking the weather for your city.</p>
+</div>
+
+@using (Html.BeginForm("CityForm", "Home", FormMethod.Get))
+{
+    <label for="City">Enter a City:</label>
+    <br>
+    @Html.TextBox("data")
+    <br>
+    <input type="submit" value="Get Forecast">
+}
+<table class="table">
+    <tr>
+        <th>
+            Date
+        </th>
+        <th>
+            precipitation
+        </th>
+        <th>
+            Low Temp
+        </th>
+        <th>
+            High Temp
+        </th>
+        <th>
+            Humidity
+        </th>
+        <th></th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Applicable_Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Weather_State_Name)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Min_Temp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Max_Temp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Humidity)%
+                </td>
+            </tr>
+        }
+
+    }
+</table>

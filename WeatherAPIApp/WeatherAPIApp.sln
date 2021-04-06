@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherAPILib", "WeatherAPI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{4A71B0E4-AD8E-4851-9526-52AF592AFCCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "WebUI\WebUI.csproj", "{4701B47E-F595-4CC5-BE80-D09C2EB1F781}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4A71B0E4-AD8E-4851-9526-52AF592AFCCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A71B0E4-AD8E-4851-9526-52AF592AFCCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A71B0E4-AD8E-4851-9526-52AF592AFCCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4701B47E-F595-4CC5-BE80-D09C2EB1F781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4701B47E-F595-4CC5-BE80-D09C2EB1F781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4701B47E-F595-4CC5-BE80-D09C2EB1F781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4701B47E-F595-4CC5-BE80-D09C2EB1F781}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
