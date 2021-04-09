@@ -12,6 +12,10 @@ namespace ShoppingLib
         {
         }
 
+        public PhysicalMusicAlbumCD()
+        {
+        }
+
         public bool IsSpecialEdition { get; set; }
 
         public bool InStock { get; set; }

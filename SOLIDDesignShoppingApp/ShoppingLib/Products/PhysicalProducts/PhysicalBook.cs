@@ -12,6 +12,10 @@ namespace ShoppingLib
         {
         }
 
+        public PhysicalBook()
+        {
+        }
+
         public int Pages { get; set; }
 
         public bool InStock { get; set; }

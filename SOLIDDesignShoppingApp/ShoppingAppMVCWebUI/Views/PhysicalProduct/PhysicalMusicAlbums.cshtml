@@ -59,8 +59,8 @@
                 @Html.DisplayFor(modelItem => item.NumberOfTracks)
             </td>
             <td>
-                <a class="btn btn-default" href="@Url.Action("Purchase", "Product")">
-                    Purchase
+                <a id="btn_add" href="@Url.Action("AddPhysicalMusicAlbum", "Cart", item)" class="btn btn-info btn-lg">
+                    Add To Cart
                 </a>
             </td>
         </tr>

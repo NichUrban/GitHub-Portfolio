@@ -8,22 +8,18 @@ namespace ShoppingLib
 {
     public abstract class BaseProduct : IProduct
     {
+        public int ProductIDNum { get; set; }
+        
+        public decimal Price { get; set; }
+
+        public BaseProduct()
+        {
+        }
+
         public BaseProduct(int productIDNum, decimal price)
         {
-            _productIDNum = productIDNum;
-            _price = price;
-        }
-
-        private int _productIDNum;
-        public int ProductIDNum
-        {
-            get { return _productIDNum; }
-        }
-
-        private decimal _price;
-        public decimal Price
-        {
-            get { return _price; }
-        }
+            ProductIDNum = productIDNum;
+            Price = price;
+        }        
     }
 }

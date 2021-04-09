@@ -23,7 +23,7 @@ namespace ConsoleUI
         // simulates an online shopping cart checkout
         public string DisplayCheckOutMessage()
         {
-            string checkoutInfo = $"Your total is: ${ Cart.GenerateTotal() }.\n";
+            string checkoutInfo = $"Your total is: ${ Cart.Total }.\n";
 
             foreach (var item in Cart.Items)
             {

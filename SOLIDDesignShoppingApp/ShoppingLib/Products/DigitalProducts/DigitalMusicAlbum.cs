@@ -12,6 +12,10 @@ namespace ShoppingLib
         {
         }
 
+        public DigitalMusicAlbum()
+        {
+        }
+
         public int DownloadsLeft { get; private set; } = 3;
 
         public string Artist { get; set; }

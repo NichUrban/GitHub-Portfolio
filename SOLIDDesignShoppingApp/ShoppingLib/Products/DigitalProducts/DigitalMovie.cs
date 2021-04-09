@@ -12,6 +12,10 @@ namespace ShoppingLib
         {
         }
 
+        public DigitalMovie()
+        {
+        }
+
         public int DownloadsLeft { get; private set; } = 3;
         
         public string Title { get; set; }

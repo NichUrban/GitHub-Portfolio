@@ -21,6 +21,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Products", "Index", "Product")</li>
+                    <li>@Html.ActionLink("View cart", "Index", "Cart")</li>
+                    <li><h3>@Session["count"]</h3></li> <!--TEMPORARY-->
                 </ul>
             </div>
         </div>

@@ -12,31 +12,31 @@ namespace ShoppingLib
         
         public IShopper Shopper { get; set; }
 
-        private decimal _total;
-        public decimal Total
+        
+        public decimal Total 
         {
             get 
             { 
-                return _total; 
-            }
-            private set
-            {
-                _total = GenerateTotal();
-            }
+                return GenerateTotal();
+            } 
         }
+
 
         public decimal GenerateTotal()
         {
             decimal total = 0;
 
-            foreach (var item in Items)
+            if (Items != null)
             {
-                total += item.Price;
-            }
+                foreach (var item in Items)
+                {
+                    total += item.Price;
+                }
 
-            if (Shopper is IDiscounts discounted)
-            {
-                total -= (total * discounted.DiscountRate);
+                if (Shopper is IDiscounts discounted)
+                {
+                    total -= (total * discounted.DiscountRate);
+                }
             }
 
             return total;

@@ -12,6 +12,10 @@ namespace ShoppingLib
         {
         }
 
+        public PhysicalMovieDVD()
+        {
+        }
+
         public int NumberOfDisks { get; set; }
         
         public bool InStock { get; set; }
