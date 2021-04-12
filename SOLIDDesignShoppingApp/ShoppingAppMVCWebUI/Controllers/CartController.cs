@@ -9,18 +9,42 @@ namespace ShoppingAppMVCWebUI.Controllers
 {
     public class CartController : Controller
     {
+        // Cart index page
         public ActionResult Index()
         {
             List<IProduct> products = (List<IProduct>)Session["cart"];
             Cart cart = new Cart();
             cart.Items = products;
+            // ADD SHOPPER AS WELL
 
             return View(cart);
         }
 
-        public ActionResult AddPhysicalBook(PhysicalBook book) 
+        // Add products to the cart
+        private void Add(IProduct item)
         {
-            Add(book);
+            if (Session["cart"] == null)
+            {
+                List<IProduct> products = new List<IProduct>();
+
+                products.Add(item);
+                Session["cart"] = products;
+                //ViewBag.cart = products.Count();
+
+                Session["count"] = 1;
+            }
+            else
+            {
+                List<IProduct> products = (List<IProduct>)Session["cart"];
+                products.Add(item);
+                Session["cart"] = products;
+                Session["count"] = Convert.ToInt32(Session["count"]) + 1;
+            }
+        }
+
+        public ActionResult AddPhysicalBook(PhysicalBook item) 
+        {
+            Add(item);
             
             return Redirect(Request.UrlReferrer.PathAndQuery);
         }
@@ -60,26 +84,67 @@ namespace ShoppingAppMVCWebUI.Controllers
             return Redirect(Request.UrlReferrer.PathAndQuery);
         }
 
-        private void Add(IProduct item)
+        // UNDER CONSTRUCTION
+        //
+        // Remove items from the cart
+        public void Remove(IProduct item)
         {
-            if (Session["cart"] == null)
-            {
-                List<IProduct> products = new List<IProduct>();
+            List<IProduct> products = (List<IProduct>)Session["cart"];
 
-                products.Add(item);
-                Session["cart"] = products;
-                //ViewBag.cart = products.Count();
-
-                Session["count"] = 1;
-            }
-            else
+            foreach (var prod in products)
             {
-                List<IProduct> products = (List<IProduct>)Session["cart"];
-                products.Add(item);
-                Session["cart"] = products;
-                //ViewBag.cart =products.Count();
-                Session["count"] = Convert.ToInt32(Session["count"]) + 1;
+                if (item.ProductIDNum == prod.ProductIDNum)
+                {
+                    products.Remove(prod);
+                    break;
+                }
             }
+            
+            Session["cart"] = products;
+            Session["count"] = Convert.ToInt32(Session["count"]) - 1;
+        }
+
+        public ActionResult RemovePhysicalBook(PhysicalBook item)
+        {
+            Remove(item);
+
+            return RedirectToAction("Index", "Cart");
+        }
+
+        public ActionResult RemovePhysicalMovie(PhysicalMovieDVD item)
+        {
+            Remove(item);
+
+            return RedirectToAction("Index", "Cart");
+        }
+
+        public ActionResult RemovePhysicalMusicAlbum(PhysicalMusicAlbumCD item)
+        {
+            Remove(item);
+
+            return RedirectToAction("Index", "Cart");
+        }
+
+        public ActionResult RemoveDigitalBook(DigitalBook item)
+        {
+            Remove(item);
+
+            return RedirectToAction("Index", "Cart");
+        }
+
+        public ActionResult RemoveDigitalMovie(DigitalMovie item)
+        {
+            Remove(item);
+
+            return RedirectToAction("Index", "Cart");
+        }
+
+        public ActionResult RemoveDigitalMusicAlbum(DigitalMusicAlbum item)
+        {
+            Remove(item);
+
+            //return RedirectToAction("Index", "Cart");
+            return Redirect(Request.UrlReferrer.PathAndQuery);
         }
     }
 }

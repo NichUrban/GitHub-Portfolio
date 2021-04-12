@@ -9,4 +9,3 @@ C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingLib\bin\Deb
 C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingLib\obj\Debug\ShoppingLib.csproj.CoreCompileInputs.cache
 C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingLib\obj\Debug\ShoppingLib.dll
 C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingLib\obj\Debug\ShoppingLib.pdb
-C:\Users\nicho\source\GitHubPortfolio\SOLIDDesignShoppingApp\ShoppingLib\obj\Debug\ShoppingLib.csprojAssemblyReference.cache

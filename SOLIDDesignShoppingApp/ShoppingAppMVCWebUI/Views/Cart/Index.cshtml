@@ -5,7 +5,6 @@
 }
 
 <h2>Shopping Cart</h2>
-<h3>Items in Cart: @Session["count"]</h3>
 <table class="table">
     <tr>
         <th>
@@ -21,8 +20,353 @@
                 @Html.DisplayFor(modelItem => Model.Total)
             </td>
             <td>
-
+                Items in Cart: @Session["count"]
             </td>
         </tr>
     }
 </table>
+
+<!--CREATE A TABLE FOR EACH TYPE OF PRODUCT THAT WOULD BE IN THE CART-->
+@if (Model.Items != null)
+{
+    foreach (var item in Model.Items)
+    {
+        if (item is DigitalMusicAlbum digAlbum)
+        {
+            <table class="table">
+                <tr>
+                    <th>
+                        Product ID #
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Downloads left
+                    </th>
+                    <th>
+                        Artist
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Number of tracks
+                    </th>
+                    <th>
+                        Digital album
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => digAlbum.ProductIDNum)
+                    </td>
+                    <td>
+                        $@Html.DisplayFor(modelItem => digAlbum.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => digAlbum.DownloadsLeft)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => digAlbum.Artist)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => digAlbum.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => digAlbum.NumberOfTracks)
+                    </td>
+                    <td>
+                        <a id="btn_add" href="@Url.Action("RemoveDigitalMusicAlbum", "Cart", item)" class="btn btn-info btn-lg">
+                            Remove
+                        </a>
+
+                    </td>
+                </tr>
+            </table>
+        }
+
+        if (item is DigitalMovie digiMovie)
+        {
+
+            <table class="table">
+                <tr>
+                    <th>
+                        Product ID #
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Downloads left
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Directed by
+                    </th>
+                    <th>
+                        Runtime in minutes
+                    </th>
+                    <th>
+                        Digital movie
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => digiMovie.ProductIDNum)
+                    </td>
+                    <td>
+                        $@Html.DisplayFor(modelItem => digiMovie.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => digiMovie.DownloadsLeft)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => digiMovie.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => digiMovie.DirectedBy)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => digiMovie.RunTimeInMinutes)
+                    </td>
+                    <td>
+                        <a id="btn_add" href="@Url.Action("RemoveDigitalMovie", "Cart", item)" class="btn btn-info btn-lg">
+                            Remove
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        }
+
+        if (item is DigitalBook digiBook)
+        {
+            <table class="table">
+                <tr>
+                    <th>
+                        Product ID #
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Downloads left
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Author
+                    </th>
+                    <th>
+                        Digital book
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => digiBook.ProductIDNum)
+                    </td>
+                    <td>
+                        $@Html.DisplayFor(modelItem => digiBook.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => digiBook.DownloadsLeft)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => digiBook.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => digiBook.Author)
+                    </td>
+                    <td>
+                        <a id="btn_add" href="@Url.Action("RemoveDigitalBook", "Cart", item)" class="btn btn-info btn-lg">
+                            Remove
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        }
+
+        if (item is PhysicalMusicAlbumCD album)
+        {
+            <table class="table">
+                <tr>
+                    <th>
+                        Product ID #
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Special edition
+                    </th>
+                    <th>
+                        In stock
+                    </th>
+                    <th>
+                        Artist
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Number of tracks
+                    </th>
+                    <th>
+                        Album
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => album.ProductIDNum)
+                    </td>
+                    <td>
+                        $@Html.DisplayFor(modelItem => album.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => album.IsSpecialEdition)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => album.InStock)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => album.Artist)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => album.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => album.NumberOfTracks)
+                    </td>
+                    <td>
+                        <a id="btn_add" href="@Url.Action("RemovePhysicalMusicAlbum", "Cart", item)" class="btn btn-info btn-lg">
+                            Remove
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        }
+
+        if (item is PhysicalMovieDVD movie)
+        {
+            <table class="table">
+                <tr>
+                    <th>
+                        Product ID #
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Number of disks
+                    </th>
+                    <th>
+                        In stock
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Directed by
+                    </th>
+                    <th>
+                        Runtime in minutes
+                    </th>
+                    <th>
+                        Movie
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => movie.ProductIDNum)
+                    </td>
+                    <td>
+                        $@Html.DisplayFor(modelItem => movie.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => movie.NumberOfDisks)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => movie.InStock)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => movie.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => movie.DirectedBy)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => movie.RunTimeInMinutes)
+                    </td>
+                    <td>
+                        <a id="btn_add" href="@Url.Action("RemovePhysicalMovie", "Cart", item)" class="btn btn-info btn-lg">
+                            Remove
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        }
+
+        if (item is PhysicalBook book)
+        {
+            <table class="table">
+                <tr>
+                    <th>
+                        Product ID #
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Pages
+                    </th>
+                    <th>
+                        In stock
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Author
+                    </th>
+                    <th>
+                        Book
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => book.ProductIDNum)
+                    </td>
+                    <td>
+                        $@Html.DisplayFor(modelItem => book.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => book.Pages)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => book.InStock)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => book.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => book.Author)
+                    </td>
+                    <td>
+                        <a id="btn_add" href="@Url.Action("RemovePhysicalBook", "Cart", item)" class="btn btn-info btn-lg">
+                            Remove
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        }
+
+    }
+}
+
+
+
+
+
