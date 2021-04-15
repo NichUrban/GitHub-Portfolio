@@ -20,9 +20,10 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Sign in", "Index", "Shopper")</li>
                     <li>@Html.ActionLink("Products", "Index", "Product")</li>
                     <li>@Html.ActionLink("View cart", "Index", "Cart")</li>
-                    <li><h3>@Session["count"]</h3></li> <!--TEMPORARY-->
+                    <li><h3>@Session["count"]</h3></li>
                 </ul>
             </div>
         </div>

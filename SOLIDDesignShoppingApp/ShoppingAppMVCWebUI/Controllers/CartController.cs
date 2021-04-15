@@ -15,7 +15,9 @@ namespace ShoppingAppMVCWebUI.Controllers
             List<IProduct> products = (List<IProduct>)Session["cart"];
             Cart cart = new Cart();
             cart.Items = products;
-            // ADD SHOPPER AS WELL
+            
+            IShopper shopper = (IShopper)Session["shopper"];
+            cart.Shopper = shopper;
 
             return View(cart);
         }

@@ -14,7 +14,6 @@
     </tr>
     @if (Model != null)
     {
-
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => Model.Total)
@@ -26,7 +25,6 @@
     }
 </table>
 
-<!--CREATE A TABLE FOR EACH TYPE OF PRODUCT THAT WOULD BE IN THE CART-->
 @if (Model.Items != null)
 {
     foreach (var item in Model.Items)
@@ -362,11 +360,5 @@
                 </tr>
             </table>
         }
-
     }
 }
-
-
-
-
-

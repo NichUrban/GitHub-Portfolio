@@ -21,8 +21,7 @@ namespace ShoppingLib
             } 
         }
 
-
-        public decimal GenerateTotal()
+        public decimal GenerateSubTotal()
         {
             decimal total = 0;
 
@@ -32,6 +31,17 @@ namespace ShoppingLib
                 {
                     total += item.Price;
                 }
+            }
+            return total;
+        }
+
+        public decimal GenerateTotal()
+        {
+            decimal total = 0;
+
+            if (Items != null)
+            {
+                total = GenerateSubTotal();
 
                 if (Shopper is IDiscounts discounted)
                 {

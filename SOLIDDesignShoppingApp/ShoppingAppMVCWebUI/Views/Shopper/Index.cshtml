@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Shopper sign in";
+}
+
+<h2>Sign In Page</h2>
+
+<h3>Sign in as Guest:</h3>
+<a class="btn btn-lg btn-info" href="@Url.Action("GuestSignIn", "Shopper")">Guest</a>
+
+<h3>Sign in as Member (get member discount):</h3>
+<a class="btn btn-lg btn-info" href="@Url.Action("MemberSignIn", "Shopper")">Member</a>
+
+<h3>Sign in as Employee (get employee discount):</h3>
+<a class="btn btn-lg btn-info" href="@Url.Action("EmployeeSignIn", "Shopper")">Employee</a>
+
